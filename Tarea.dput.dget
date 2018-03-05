@@ -1,0 +1,8 @@
+#1 creo el objeto
+mtcars<-data.frame(a=1,b="a")
+#2 estudio la manera en que se guardará
+dput(mtcars)
+#3 lo guardo en mi disco duro
+dput(mtcars,file="/Users/marti/Documents/GitHub/Programacion2018/mtcars.R")
+#4 Genero un nuevo objeto a partir de la informacion guardada
+CarrosARANZA<-dget(file="/Users/marti/Documents/GitHub/Programacion2018/mtcars.R")
